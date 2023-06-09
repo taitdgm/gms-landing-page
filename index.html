@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GM Solutions</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="50"
+            height="40"
+            alt="GM logo"
+          />
+        </a>
+
+        <!-- Navbar -->
+        <nav class="navbar" data-navbar>
+          <div class="navbar-language">
+            <a href="#" class="navbar-link">JP</a>
+            <a href="#" class="navbar-link">VI</a>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">How it Works</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Our Work</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Pricing</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">About Us</a>
+            </li>
+          </ul>
+
+          <button type="button" class="btn btn-secondary">Contact Us</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- Hero section -->
+        <section class="section hero" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                Think Good Do Best
+                <span class="dot">.</span>
+              </h1>
+
+              <h4 class="section-text">
+                私達はお客様に信頼していただけるよう、確かな品質と技術で
+                サービスを提供できるよう努力し続けます。
+              </h4>
+
+              <button type="button" class="btn btn-primary">
+                私たちについて
+              </button>
+            </div>
+
+            <div class="hero-slider" data-slider>
+              <!-- Slider inner -->
+              <div class="slider-inner">
+                <ul class="slider-container" data-slider-container>
+                  <li class="slider-item">
+                    <figure class="img-holder">
+                      <img
+                        src="./assets/images/hero-banner.png"
+                        width="1920"
+                        height="1080"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+
+                  <li class="slider-item">
+                    <div class="hero-card">
+                      <figure class="img-holder">
+                        <img
+                          src="./assets/images/hero-banner-2.jpg"
+                          width="1920"
+                          height="1080"
+                          alt="hero banner"
+                          class="img-cover"
+                        />
+                      </figure>
+
+                      <button class="play-btn" aria-label="play video">
+                        <ion-icon name="play" aria-hidden="true"></ion-icon>
+                      </button>
+                    </div>
+                  </li>
+
+                  <li class="slider-item">
+                    <figure class="img-holder">
+                      <img
+                        src="./assets/images/hero-banner-3.jpg"
+                        width="1920"
+                        height="1080"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+
+              <button
+                class="btn-icon slider-btn prev"
+                aria-label="slide to previous"
+                data-slider-prev
+              >
+                <ion-icon name="arrow-back"></ion-icon>
+              </button>
+
+              <!-- Next and back button -->
+              <button
+                class="btn-icon slider-btn next"
+                aria-label="slide to next"
+                data-slider-next
+              >
+                <ion-icon name="arrow-forward"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Service section -->
+        <section class="section service" aria-labelledby="service-label">
+          <div class="container">
+            <ul class="grid-list">
+              <li class="service-card">
+                <figure class="card-icon">
+                  <img
+                    src="./assets/images/icon1.png"
+                    width="1920"
+                    height="1080"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="content-wrapper">
+                  <h3>
+                    ITコンサルティング
+                    <br />
+                    サービス
+                  </h3>
+
+                  <button type="button" class="explore-btn">
+                    <span class="span">Explore more</span>
+
+                    <div class="icon-wrapper">
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+                  </button>
+                </div>
+              </li>
+
+              <li class="service-card">
+                <figure class="card-icon">
+                  <img
+                    src="./assets/images/icon2.png"
+                    width="1920"
+                    height="1080"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="content-wrapper">
+                  <h4>
+                    最新テクノロジー
+                    <br />
+                    サービス
+                  </h4>
+
+                  <button type="button" class="explore-btn">
+                    <span class="span">Explore more</span>
+
+                    <div class="icon-wrapper">
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+                  </button>
+                </div>
+              </li>
+
+              <li class="service-card">
+                <figure class="card-icon">
+                  <img
+                    src="./assets/images/icon3.png"
+                    width="1920"
+                    height="1080"
+                    alt=""
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="content-wrapper">
+                  <h4>
+                    システム開発
+                    <br />
+                    ・保守・運用 サービス
+                  </h4>
+
+                  <button type="button" class="explore-btn">
+                    <span class="span">Explore more</span>
+
+                    <div class="icon-wrapper">
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </div>
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- About section -->
+        <section class="section about" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                About Us
+                <span class="dot">.</span>
+              </h1>
+
+              <h2 class="h2 section-subtitle">
+                私たちはお客様のイノベーションパートナーを目指しています
+              </h2>
+
+              <p class="section-text">
+                あらゆる業界、企業が目まぐるしく変化する社会のなか
+                次世代テクノロジーを迅速に適用することは、効率化と企業競争力の強化に不可欠です。
+                ただし、多くの企業にとって次世代テクノロジーを
+                効果的に活用することは困難です。 GM
+                Solutionsは次世代テクノロジーをお客様に活用していただくために設立されたスペシャリストの集団です
+              </p>
+            </div>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.png"
+                width="800"
+                height="580"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- Technology section -->
+        <section class="section technology" aria-label="hero">
+          <div class="container">
+            <div class="technology-content">
+              <h1 class="h1 section-title">
+                About Technology
+                <span class="dot">.</span>
+              </h1>
+
+              <h4 class="h4 section-subtitle">
+                GM
+                Solutionsは多岐にわたる領域で、高い技術を持ったスペシャリスト<br />がお客様に最適なシステムをご提供いたします。
+              </h4>
+            </div>
+          </div>
+
+          <div class="certificate">
+            <div class="slider certificate-slider" data-certificate-slider>
+              <div class="slider-container" data-certificate-slider-container>
+                <div class="slider-item">
+                  <div class="card img-holder">
+                    <img
+                      src="./assets/images/cert1.png"
+                      width="1000"
+                      height="560"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="card img-holder">
+                    <img
+                      src="./assets/images/cert2.png"
+                      width="1000"
+                      height="560"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="card img-holder">
+                    <img
+                      src="./assets/images/cert3.png"
+                      width="1000"
+                      height="560"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="card img-holder">
+                    <img
+                      src="./assets/images/cert1.png"
+                      width="1000"
+                      height="560"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </div>
+                </div>
+
+                <div class="slider-item">
+                  <div class="card img-holder">
+                    <img
+                      src="./assets/images/cert2.png"
+                      width="1000"
+                      height="560"
+                      alt=""
+                      class="img-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-icon slider-btn prev" data-slider-prev>
+            <ion-icon name="arrow-back-sharp"></ion-icon>
+          </button>
+
+          <button class="btn-icon slider-btn next" data-slider-next>
+            <ion-icon name="arrow-forward-sharp"></ion-icon>
+          </button>
+        </section>
+
+        <!-- Feature section -->
+        <section class="section feature" aria-labelledby="feature-label">
+          <div class="container">
+            <div class="feature-content">
+              <h1 class="h1 section-title">
+                What <br />
+                We have
+                <span class="dot">.</span>
+              </h1>
+
+              <h2 class="h2 section-subtitle">
+                企業内業務系システムのソフトウェア新規開発、製品ソフトウェア
+                <br />
+                企業内業務系システムのソフトウ
+              </h2>
+
+              <button type="button" class="explore-btn">
+                <span class="span">Explore more</span>
+
+                <div class="icon-wrapper">
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </div>
+              </button>
+            </div>
+
+            <div class="feature-card">
+              <figure class="card-image img-holder">
+                <img
+                  src="./assets/images/feature-1.png"
+                  width="1920"
+                  height="1080"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+
+              <div class="feature-content">
+                <div>
+                  <h3 class="card-title">ITコンサルティング サービス</h3>
+
+                  <p class="card-text">
+                    企業内業務系システムのソフトウェア新規開発、製品ソフトウェア新規開発及び同ソフトウェアの機能
+                    追加、保守開発対応等を受託します。
+                  </p>
+                </div>
+
+                <div class="feature-list">
+                  <span class="feature-item">Webシステム</span>
+                  <span class="feature-item">スマートフォンシステム</span>
+                  <span class="feature-item">Saleforce開発</span>
+                  <span class="feature-item">Odoo開発</span>
+                  <span class="feature-item">SAP開発</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <figure class="card-image img-holder">
+                <img
+                  src="./assets/images/feature-2.png"
+                  width="1920"
+                  height="1080"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+
+              <div class="feature-content">
+                <div>
+                  <h3 class="card-title">システム開発・保守・運用 サービス</h3>
+
+                  <p class="card-text">
+                    GM
+                    Solutionsは高い技術力と妥協のない取り組みで、お客様に最適なシステムを提供いたします。お客様のご要望をしっかりとヒアリングした上でシステム化を行います
+                  </p>
+                </div>
+
+                <div class="feature-list">
+                  <span class="feature-item">DXコンサルティング</span>
+                  <span class="feature-item">クラウド化コンサルティング</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <figure class="card-image img-holder">
+                <img
+                  src="./assets/images/feature-3.png"
+                  width="1920"
+                  height="1080"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+
+              <div class="feature-content">
+                <div>
+                  <h3 class="card-title">最新テクノロジー サービス</h3>
+
+                  <p class="card-text">
+                    弊社は、Amazon Web Services (AWS)、Microsoft
+                    Azure、GCP、PMP等の証明書を持ち、幅広い業種で培ってきた高い新技術力かつ高い競争力、堅牢なセキュリティを考慮したサービス・ソリューションで、お客様のビジネスをお手伝いします。
+                  </p>
+                </div>
+
+                <div class="feature-list">
+                  <span class="feature-item">AI（人工知能</span>
+                  <span class="feature-item"
+                    >ロボティクス・アートメーション</span
+                  >
+                  <span class="feature-item">ブロックチェーン</span>
+                  <span class="feature-item">ビッグデータ</span>
+                  <span class="feature-item">ローコード</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Project section -->
+        <section class="section project" aria-label="our stats">
+          <div class="container">
+            <div class="project-content">
+              <h1 class="h1 section-title">
+                Case
+                <br />
+                Study
+                <span class="dot">.</span>
+              </h1>
+
+              <div class="content-wrapper">
+                <h3 class="section-text">
+                  GM Solutionsは多岐にわたる領域で、高い技術を持ったスペ <br />
+                  シャリストがお客様に最適なシステムをご提供いたします
+                </h3>
+
+                <button type="button" class="explore-btn">
+                  <span class="span">Explore more</span>
+
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="section contact" aria-label="contact us">
+          <div class="container">
+            <h1 class="h1 section-title">
+              Let’s work
+              <br />
+              together
+              <span class="dot">.</span>
+            </h1>
+
+            <div class="contact-wrapper">
+              <form action="" class="contact-form">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    aria-label="name"
+                    placeholder="Your name*"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    aria-label="email"
+                    placeholder="Email address*"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="subject"
+                    aria-label="subject"
+                    placeholder="Subject"
+                    class="input-field"
+                  />
+
+                  <input
+                    type="number"
+                    name="phone"
+                    aria-label="phone"
+                    placeholder="Phone number"
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  aria-label="message"
+                  placeholder="Your message...*"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <div class="checkbox-wrapper">
+                  <input
+                    type="checkbox"
+                    name="terms_and_policy"
+                    id="terms"
+                    required
+                    class="checkbox"
+                  />
+
+                  <label for="terms" class="label">
+                    Accept
+                    <a href="#" class="label-link">Terms of Services</a> and
+                    <a href="#" class="label-link">Privacy Policy</a>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+
+              <iframe
+                title="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8059442250687!2d105.77768887591071!3d21.040449287375772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455a4ca6eaaa5%3A0xa14c50508ad467b4!2sTHE%20NINE%20TOWER!5e0!3m2!1svi!2s!4v1686106140355!5m2!1svi!2s"
+                width="600"
+                height="450"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="map"
+              ></iframe>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- #BACK TO TOP BUTTON -->
+    <a
+      href="#top"
+      aria-label="back to top"
+      data-back-top-btn
+      class="back-top-btn"
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
+    <!-- Import ionicon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
