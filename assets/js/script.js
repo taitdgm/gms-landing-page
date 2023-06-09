@@ -10,6 +10,17 @@ const addEventOnElements = function (elements, eventType, callback) {
 };
 
 /**
+ * Preloader
+ */
+const preloader = document.querySelector("[data-preloader]");
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    preloader.classList.add("remove");
+  }, 1500);
+});
+
+/**
  * SLIDER
  */
 const sliders = document.querySelectorAll("[data-slider]");
