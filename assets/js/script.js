@@ -90,7 +90,7 @@ function reloadSlider() {
   let checkLeft = sliderItems[currentSlidePosition].offsetLeft;
   sliderContainer.style.left = -checkLeft + "px";
 
-  let lastActiveDot = document.querySelector(".slider-dots li.active");
+  let lastActiveDot = document.querySelector(".hero .slider-dots li.active");
 
   lastActiveDot.classList.remove("active");
   sliderDots[currentSlidePosition].classList.add("active");
@@ -119,3 +119,99 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+/**
+ * Certificate slider
+ */
+
+const certSlider = document.querySelector("[data-certificate-slider]");
+
+const sliderInit = function (currentSlider) {
+  const sliderContainer = currentSlider.querySelector(
+    "[data-certificate-slider-container]"
+  );
+  const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
+  const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
+
+  const sliderDots = document.querySelectorAll("[data-certificate-slider-dot]");
+  const lastActiveDots = document.querySelectorAll(
+    ".technology .slider-dots li.active"
+  );
+
+  const totalSliderVisibleItems = Number(
+    getComputedStyle(currentSlider).getPropertyValue("--slider-item")
+  );
+
+  const totalSliderHiddenItems =
+    sliderContainer.childElementCount - totalSliderVisibleItems;
+
+  let currentSlidePos = 0;
+
+  if (!lastActiveDots.length) {
+    sliderDots.forEach((item, index) => {
+      if (index < totalSliderVisibleItems) {
+        item.classList.add("active");
+      }
+    });
+  }
+
+  const moveSliderItem = function () {
+    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSlidePos].offsetLeft}px)`;
+  };
+
+  /**
+   * Next slide
+   */
+  const slideNext = function () {
+    const slideEnd = currentSlidePos >= totalSliderHiddenItems;
+
+    if (slideEnd) {
+      currentSlidePos = 0;
+    } else {
+      currentSlidePos++;
+    }
+
+    moveSliderItem();
+  };
+  sliderNextBtn.addEventListener("click", slideNext);
+
+  /**
+   * Previous slide
+   */
+  const slidePrev = function () {
+    if (currentSlidePos <= 0) {
+      currentSlidePos = totalSliderHiddenItems;
+    } else {
+      currentSlidePos--;
+    }
+
+    moveSliderItem();
+  };
+
+  sliderPrevBtn.addEventListener("click", slidePrev);
+
+  /**
+   * Auto slide
+   */
+  let autoSlideInterval;
+
+  const startAutoSlide = () =>
+    (autoSlideInterval = setInterval(slideNext, 3000));
+  startAutoSlide();
+  const stopAutoSlide = () => clearInterval(autoSlideInterval);
+
+  currentSlider.addEventListener("mouseover", stopAutoSlide);
+
+  currentSlider.addEventListener("mouseout", startAutoSlide);
+
+  const handleResize = () => {
+    moveSliderItem();
+  };
+
+  /**
+   * Responsive
+   */
+  window.addEventListener("resize", handleResize);
+};
+
+sliderInit(certSlider);
