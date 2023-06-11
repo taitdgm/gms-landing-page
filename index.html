@@ -132,46 +132,34 @@
             </div>
 
             <div class="hero-slider" data-slider>
-              <!-- Slider inner -->
               <div class="slider-inner">
-                <ul class="slider-container" data-slider-container>
-                  <li class="slider-item">
+                <div class="hero-overlay"></div>
+                <ul class="slider-container" data-hero-slider-container>
+                  <li data-hero-slider-item class="slider-item">
                     <figure class="img-holder">
                       <img
                         src="./assets/images/hero-banner.png"
-                        width="1920"
-                        height="1080"
-                        alt=""
+                        alt="hero banner"
                         class="img-cover"
                       />
                     </figure>
                   </li>
 
-                  <li class="slider-item">
-                    <div class="hero-card">
-                      <figure class="img-holder">
-                        <img
-                          src="./assets/images/hero-banner-2.jpg"
-                          width="1920"
-                          height="1080"
-                          alt="hero banner"
-                          class="img-cover"
-                        />
-                      </figure>
-
-                      <button class="play-btn" aria-label="play video">
-                        <ion-icon name="play" aria-hidden="true"></ion-icon>
-                      </button>
-                    </div>
+                  <li data-hero-slider-item class="slider-item">
+                    <figure class="img-holder">
+                      <img
+                        src="./assets/images/hero-banner-2.jpg"
+                        alt="hero banner"
+                        class="img-cover"
+                      />
+                    </figure>
                   </li>
 
-                  <li class="slider-item">
+                  <li data-hero-slider-item class="slider-item">
                     <figure class="img-holder">
                       <img
                         src="./assets/images/hero-banner-3.jpg"
-                        width="1920"
-                        height="1080"
-                        alt=""
+                        alt="hero banner"
                         class="img-cover"
                       />
                     </figure>
@@ -179,22 +167,28 @@
                 </ul>
               </div>
 
+              <!-- Next and back button -->
               <button
                 class="btn-icon slider-btn prev"
                 aria-label="slide to previous"
-                data-slider-prev
+                data-hero-slider-prev
               >
                 <ion-icon name="arrow-back"></ion-icon>
               </button>
 
-              <!-- Next and back button -->
               <button
                 class="btn-icon slider-btn next"
                 aria-label="slide to next"
-                data-slider-next
+                data-hero-slider-next
               >
                 <ion-icon name="arrow-forward"></ion-icon>
               </button>
+
+              <ul class="slider-dots">
+                <li class="active" data-hero-slider-dot></li>
+                <li data-hero-slider-dot></li>
+                <li data-hero-slider-dot></li>
+              </ul>
             </div>
           </div>
         </section>
@@ -323,7 +317,7 @@
         </section>
 
         <!-- Technology section -->
-        <section class="section technology" aria-label="hero">
+        <!-- <section class="section technology" aria-label="hero">
           <div class="container">
             <div class="technology-content">
               <h1 class="h1 section-title">
@@ -411,7 +405,7 @@
           <button class="btn-icon slider-btn next" data-slider-next>
             <ion-icon name="arrow-forward-sharp"></ion-icon>
           </button>
-        </section>
+        </section> -->
 
         <!-- Feature section -->
         <section class="section feature" aria-labelledby="feature-label">
