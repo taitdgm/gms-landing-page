@@ -108,6 +108,15 @@ sliderDots.forEach((item, key) => {
   });
 });
 
+const handleResize = () => {
+  reloadSlider();
+};
+
+/**
+ * Responsive
+ */
+window.addEventListener("resize", handleResize);
+
 /**
  * Scroll to top
  */
@@ -124,19 +133,18 @@ window.addEventListener("scroll", function () {
  * Certificate slider
  */
 
-const certSlider = document.querySelector("[data-certificate-slider]");
+const carousels = document.querySelectorAll("[data-carousel]");
 
 const sliderInit = function (currentSlider) {
   const sliderContainer = currentSlider.querySelector(
-    "[data-certificate-slider-container]"
+    "[data-carousel-container]"
   );
   const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
   const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
 
-  const sliderDots = document.querySelectorAll("[data-certificate-slider-dot]");
-  const lastActiveDots = document.querySelectorAll(
-    ".technology .slider-dots li.active"
-  );
+  const sliderDots = currentSlider.querySelectorAll("[data-slider-dot]");
+
+  const lastActiveDots = document.querySelectorAll(["data-slider-dot"]);
 
   const totalSliderVisibleItems = Number(
     getComputedStyle(currentSlider).getPropertyValue("--slider-item")
@@ -196,7 +204,7 @@ const sliderInit = function (currentSlider) {
   let autoSlideInterval;
 
   const startAutoSlide = () =>
-    (autoSlideInterval = setInterval(slideNext, 3000));
+    (autoSlideInterval = setInterval(slideNext, 5000));
   startAutoSlide();
   const stopAutoSlide = () => clearInterval(autoSlideInterval);
 
@@ -214,4 +222,6 @@ const sliderInit = function (currentSlider) {
   window.addEventListener("resize", handleResize);
 };
 
-sliderInit(certSlider);
+carousels.forEach((carousel) => {
+  sliderInit(carousel);
+});
