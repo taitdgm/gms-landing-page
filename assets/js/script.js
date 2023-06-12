@@ -1,6 +1,29 @@
 "use strict";
 
 /**
+ * Page navigation
+ */
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+for (const link of navigationLinks) {
+  link.addEventListener("click", function () {
+    for (let i = 0; i < pages.length; i++) {
+      console.log(this.innerHTML.toLowerCase());
+      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+        console.log(i);
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+  });
+}
+
+/**
  * Add event listener on multiple elements
  */
 const addEventOnElements = function (elements, eventType, callback) {

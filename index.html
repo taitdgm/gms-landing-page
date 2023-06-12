@@ -67,23 +67,23 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#" class="navbar-link">Home</a>
+              <button class="navbar-link active" data-nav-link>Home</button>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link">About Us</a>
+              <button class="navbar-link" data-nav-link>About Us</button>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link">Services</a>
+              <button class="navbar-link" data-nav-link>Services</button>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link">News</a>
+              <button class="navbar-link" data-nav-link>News</button>
             </li>
 
             <li class="navbar-item">
-              <a href="#" class="navbar-link">Achievement</a>
+              <button class="navbar-link" data-nav-link>Achievement</button>
             </li>
 
             <li class="navbar-item">
@@ -111,7 +111,7 @@
     </header>
 
     <main>
-      <article>
+      <article class="home active" data-page="home">
         <!-- Hero section -->
         <section class="section hero" aria-label="hero">
           <div class="container">
@@ -889,6 +889,129 @@
                 referrerpolicy="no-referrer-when-downgrade"
                 class="map"
               ></iframe>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <article class="about-page" data-page="about us">
+        <!-- Hero section -->
+        <section class="section about-hero" aria-label="hero">
+          <div class="container">
+            <div class="about-hero-content">
+              <h1 class="h1 section-title">
+                Who <br />
+                We Are
+                <span class="dot">?</span>
+              </h1>
+
+              <div>
+                <h4 class="section-subtitle">
+                  私たちはお客様のイノベーションパートナーを目指しています
+                </h4>
+
+                <p class="section-text">
+                  あらゆる業界、企業が目まぐるしく変化する社会のなか
+                  次世代テクノロジーを迅速に適用することは、効率化と企業競争力の強化に不可欠です。ただし、多くの企業にとって次世代テクノロジーを
+                  効果的に活用することは困難です。
+                </p>
+              </div>
+            </div>
+
+            <figure class="img-holder">
+              <img
+                src="./assets/images/about-page-banner.jpg"
+                alt="hero banner"
+                class="img-cover"
+              />
+              <div class="image-overlay"></div>
+            </figure>
+
+            <div class="about-detail">
+              <ul>
+                <li class="about-item">
+                  <div class="header-wrapper">
+                    <h2 class="h2 item-title">Mission</h2>
+                    <h4>テクノロジーでビジネススタイルをスマートに</h4>
+                  </div>
+
+                  <p class="detail-text">
+                    AI
+                    CROSSは、企業が最大のアウトプットを出せるように業務効率化のサービスを提供いたします。それによって、従業員の方がSmart
+                    Life を実現できるお手伝いをいたします。AI
+                    CROSSは、企業が最大のアウトプットを出せるように業務効率化のサービスを提供いたします。それによって、従業員の方がSmart
+                    Life を実現できるお手伝いをいたします。
+                  </p>
+                </li>
+
+                <li class="about-item">
+                  <div class="header-wrapper">
+                    <h2 class="h2 item-title">Vision</h2>
+                    <h4>テクノロジーでビジネススタイルをスマートに</h4>
+                  </div>
+
+                  <p class="detail-text">
+                    AI
+                    CROSSは、企業が最大のアウトプットを出せるように業務効率化のサービスを提供いたします。それによって、従業員の方がSmart
+                    Life を実現できるお手伝いをいたします。AI
+                    CROSSは、企業が最大のアウトプットを出せるように業務効率化のサービスを提供いたします。それによって、従業員の方がSmart
+                    Life を実現できるお手伝いをいたします。
+                  </p>
+                </li>
+              </ul>
+
+              <div class="company-profile">
+                <div class="about-item">
+                  <div class="header-wrapper">
+                    <h2 class="h2 item-title">Company Profile</h2>
+                    <h4>テクノロジーでビジネススタイルをスマートに</h4>
+                  </div>
+
+                  <ul class="profile-list">
+                    <li class="profile-item">
+                      <p class="profile-category">事業所名</p>
+                      <p>
+                        株式会社エクスペリメンタル( 英語名 experimental Inc. )
+                      </p>
+                    </li>
+
+                    <li class="profile-item">
+                      <p class="profile-category">代表者名</p>
+                      <p>2019年10月31日</p>
+                    </li>
+
+                    <li class="profile-item">
+                      <p class="profile-category">住所</p>
+                      <p>3,000,000 円</p>
+                    </li>
+
+                    <li class="profile-item">
+                      <p class="profile-category">電話番号</p>
+                      <p>代表取締役 安藤 正</p>
+                    </li>
+
+                    <li class="profile-item">
+                      <p class="profile-category">設立</p>
+                      <p>コンピューターのソフトウェアの研究・開発・販売</p>
+                    </li>
+
+                    <li class="profile-item">
+                      <p class="profile-category">資本金</p>
+                      <p>500万円</p>
+                    </li>
+
+                    <li class="profile-item">
+                      <p class="profile-category">事業内容</p>
+                      <ul class="business-list">
+                        <li>・5G/6G次世代通信ソリューション</li>
+                        <li>・AI/BigData, DXソリューション</li>
+                        <li>・行政OpenData</li>
+                        <li>・Global Tech Hub 構築</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
