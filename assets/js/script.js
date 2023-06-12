@@ -9,9 +9,7 @@ const pages = document.querySelectorAll("[data-page]");
 for (const link of navigationLinks) {
   link.addEventListener("click", function () {
     for (let i = 0; i < pages.length; i++) {
-      console.log(this.innerHTML.toLowerCase());
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        console.log(i);
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);

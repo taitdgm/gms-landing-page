@@ -684,7 +684,6 @@ article section:first-child {
   display: grid;
   gap: 50px;
   padding-block-start: 80px;
-  padding-block-end: 160px;
 }
 /* ABOUT SECTION END  */
 
@@ -731,7 +730,7 @@ article section:first-child {
 .technology .slider-btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(calc(-50% - 30px));
   background-color: var(--bg-white);
   font-size: 2.4rem;
   width: 40px;
@@ -867,7 +866,6 @@ article section:first-child {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  align-items: center;
 }
 
 .project .content-wrapper {
@@ -875,7 +873,6 @@ article section:first-child {
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  justify-content: space-between;
 }
 
 .project .slider {
@@ -1279,6 +1276,14 @@ textarea.input-field {
   font-size: 2rem;
   color: var(--text-cyan-blue);
   display: inline-flex;
+}
+
+.achievement-page .section-subtitle {
+  font-family: var(--font-poppins);
+}
+
+.achievement-page .container {
+  padding-block: 0;
 }
 
 /* #MEDIA QUERIES */
